@@ -22,7 +22,7 @@
 
 ## 项目展示
 
-![image](doc/media/base-demo.gif)
+![image](./doc/media/base-demo.gif)
 
 
 
