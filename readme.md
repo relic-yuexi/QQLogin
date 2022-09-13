@@ -22,9 +22,9 @@
 
 ## 项目展示
 
-![image](https://cdn.jsdelivr.net/gh/relic-yuexi/QQLogin@master/doc/media/base-demo.gif)
+![image](https://cdn.jsdelivr.net/gh/relic-yuexi/QQLogin@main/doc/media/base-demo.gif)
 
-<img src="https://cdn.jsdelivr.net/gh/relic-yuexi/QQLogin@master/doc/media/base-demo.gif" />
+<img src="https://cdn.jsdelivr.net/gh/relic-yuexi/QQLogin@main/doc/media/base-demo.gif" />
 
 
 
