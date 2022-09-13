@@ -24,6 +24,8 @@
 
 ![image](https://cdn.jsdelivr.net/gh/relic-yuexi/QQLogin@master/doc/media/base-demo.gif)
 
+<img src="https://cdn.jsdelivr.net/gh/relic-yuexi/QQLogin@master/doc/media/base-demo.gif" />
+
 
 
 
