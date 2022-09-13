@@ -24,12 +24,12 @@
 
 ![image](https://cdn.jsdelivr.net/gh/relic-yuexi/QQLogin@main/doc/media/base-demo.gif)
 
-<img src="https://cdn.jsdelivr.net/gh/relic-yuexi/QQLogin@main/doc/media/base-demo.gif" />
 
 
 
 
-## ToDoList
+
+## ToDoLsit
 - [ ] 代码注释
 
 - [ ] 项目介绍/文档
