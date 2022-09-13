@@ -1,0 +1,109 @@
+.btn_setting {
+    -fx-background-color: null;
+    /*-fx-border-color: #ff0000;*/
+    -fx-pref-width: 30;
+    -fx-pref-height: 31;
+    -fx-graphic: url("../img/setting-btn.png");
+
+}
+
+.btn_setting:hover, .btn_minimize:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn_minimize {
+    -fx-background-color: null;
+    /*-fx-border-color: #ff0000;*/
+    -fx-pref-width: 30;
+    -fx-pref-height: 31;
+    -fx-graphic: url("../img/minimize-btn.png");
+
+}
+
+/*.btn_minimize:hover {*/
+/*    -fx-background-color: rgba(255, 255, 255, 0.2);*/
+/*}*/
+
+.btn_close {
+    -fx-background-color: null;
+    /*-fx-border-color: #ff0000;*/
+    -fx-pref-width: 30;
+    -fx-pref-height: 31;
+    -fx-graphic: url("../img/close-btn.png");
+}
+
+.btn_close:hover {
+    -fx-background-color: rgb(255, 84, 57);
+    /*-webkit-transition: all 0.5s linear;*/
+
+    /*-moz-transition: all 0.5s linear;*/
+
+    /*-o-transition: all 0.5s linear;*/
+
+    /*transition: all 0.5s linear;*/
+}
+
+.btn_2 {
+    -fx-background-color: #f4f4f4;
+    -fx-border-color: #86949e;
+    -fx-border-radius: 2;
+}
+
+.btn_2:hover {
+    -fx-background-color: #bee7fd;
+}
+
+
+.btn_login {
+    /*-fx-border-style: solid;*/
+    -fx-background-color: linear-gradient(to bottom, #0bc2ff, #00b6fa);
+    /*-fx-border-color: #e9f7ff;*/
+    /*-fx-border-radius: 3;*/
+
+}
+
+.btn_login:hover {
+    -fx-background-color: #1fc7fd;
+}
+
+.label {
+    -fx-background-color: white;
+}
+
+.label:hover {
+    -fx-text-fill: black;
+    /*-fx-background-color:black;*/
+}
+
+.headPane {
+    -fx-background-color: linear-gradient(to right, #5100ff, #00a9ff);
+    /*-fx-background-radius: 0;*/
+    /*-fx-border-radius: 0;*/
+}
+
+.qrcode {
+    -fx-image: url("../img/qrcode_raw.png");
+}
+
+.qrcode:hover {
+    -fx-image: url("../img/qrcode_gray.png");
+
+}
+
+#list_btn {
+    -fx-image: url("../img/down_list_raw.png");
+
+}
+
+#list_btn:hover {
+    -fx-image: url("../img/down_list_gray.png");
+}
+
+#softKeyBoard {
+    -fx-image: url("../img/softkeyboard_raw.png");
+}
+
+#softKeyBoard:hover {
+    -fx-image: url("../img/softkeyboard_gray.png");
+}
+

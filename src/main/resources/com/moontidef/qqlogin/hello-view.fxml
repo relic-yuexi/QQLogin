@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+<StackPane xmlns:fx="http://javafx.com/fxml/1" fx:id="rootNode" style="-fx-background-color: null;"
+           xmlns="http://javafx.com/javafx/8" fx:controller="com.moontidef.qqlogin.Controller">
+    <!-- 引入css文件 -->
+    <stylesheets>
+        <URL value="@./css/style.css"/>
+    </stylesheets>
+    <children>
+        <Pane fx:id="settingPane" visible="false">
+            <children>
+                <ImageView pickOnBounds="true">
+                    <image>
+                        <Image url="@./img/settings-pane.png"/>
+                    </image>
+                </ImageView>
+                <Button fx:id="minimizeBtn2" layoutX="368.0" mnemonicParsing="false" onAction="#minimizeWindow"
+                        styleClass="btn_minimize" stylesheets="@css/style.css"/>
+                <Button fx:id="closeBtn2" layoutX="398.0" mnemonicParsing="false" onAction="#closeWindow"
+                        styleClass="btn_close" stylesheets="@css/style.css" textFill="#f2f2f2"/>
+                <Button fx:id="checkBtn" layoutX="244.0" layoutY="303.0" mnemonicParsing="false"
+                        onAction="#changeToLogin" prefHeight="12.0" prefWidth="84.0" styleClass="btn_2"
+                        stylesheets="@css/style.css" text="确定" textAlignment="CENTER"/>
+                <Button fx:id="cancelBtn" layoutX="334.0" layoutY="303.0" mnemonicParsing="false"
+                        onAction="#changeToLogin" prefHeight="12.0" prefWidth="84.0" styleClass="btn_2"
+                        stylesheets="@css/style.css" text="取消" textAlignment="CENTER"/>
+            </children>
+        </Pane>
+        <Pane fx:id="loginPane">
+            <children>
+                <VBox>
+                    <children>
+                        <Pane fx:id="headPane" prefHeight="125.0" prefWidth="428.0" styleClass="headPane"
+                              stylesheets="@css/style.css">
+                            <children>
+                                <ImageView fitHeight="125.0" fitWidth="428.0" pickOnBounds="true" preserveRatio="true"/>
+                                <ImageView fx:id="img_logo" fitHeight="30.0" fitWidth="60.0" layoutX="11.0"
+                                           layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/qq_logo.png"/>
+                                    </image>
+                                </ImageView>
+                                <HBox layoutX="338.0">
+                                    <children>
+                                        <Button fx:id="settingBtn" mnemonicParsing="false" onAction="#changeToSetting"
+                                                styleClass="btn_setting" stylesheets="@css/style.css"/>
+                                        <Button fx:id="minimizeBtn" layoutX="368.0" mnemonicParsing="false"
+                                                onAction="#minimizeWindow" styleClass="btn_minimize"
+                                                stylesheets="@css/style.css"/>
+                                        <Button fx:id="closeBtn" layoutX="398.0" mnemonicParsing="false"
+                                                onAction="#closeWindow" styleClass="btn_close"
+                                                stylesheets="@css/style.css" textFill="#f2f2f2"/>
+                                    </children>
+                                </HBox>
+
+                            </children>
+                        </Pane>
+                        <Pane fx:id="bottomPane" prefHeight="206.0" prefWidth="428.0"
+                              style="-fx-background-color: white">
+                            <children>
+                                <Line fx:id="line1" endX="134.0" layoutX="199.0" layoutY="70.0" startX="-100.0"
+                                      stroke="#e5e5e5"/>
+                                <ImageView fx:id="img_pg" fitHeight="17.0" fitWidth="14.0" layoutX="97.0" layoutY="47.0"
+                                           pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/pg_raw.png"/>
+                                    </image>
+                                </ImageView>
+                                <CheckBox layoutX="96.0" layoutY="121.0" mnemonicParsing="false"
+                                          style="-fx-background-color: white;" text="自动登录" textFill="#b2b2b2"/>
+                                <Label layoutX="12.0" layoutY="178.0" styleClass="label" stylesheets="@css/style.css"
+                                       text="注册账号" textFill="#b2b2b2"/>
+                                <Line fx:id="line2" endX="134.0" layoutX="198.0" layoutY="109.0" startX="-100.0"
+                                      stroke="#e5e5e5"/>
+                                <Button layoutX="98.0" layoutY="149.0" mnemonicParsing="false" prefHeight="34.0"
+                                        prefWidth="236.0" styleClass="btn_login" stylesheets="@css/style.css"
+                                        text="登录" textFill="#fcfcfc">
+                                    <font>
+                                        <Font size="14.0"/>
+                                    </font>
+                                    <effect>
+                                        <DropShadow blurType="GAUSSIAN" color="#e9f7ff" height="3.5" offsetY="1.0"
+                                                    radius="3.6174999999999997" width="12.97"/>
+                                    </effect>
+                                </Button>
+                                <ImageView fx:id="img_lock" fitHeight="15.0" fitWidth="13.0" layoutX="97.0"
+                                           layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/lock_raw.png"/>
+                                    </image>
+                                </ImageView>
+                                <PasswordField fx:id="passwordField" layoutX="109.0" layoutY="78.0" prefHeight="23.0"
+                                               prefWidth="206.0" promptText="密码"
+                                               style="-fx-background-color: null; -fx-font-size: 17;"
+                                               styleClass="textField" stylesheets="@css/style.css"/>
+                                <Label layoutX="283.0" layoutY="120.0" style="-fx-background-color: null;"
+                                       styleClass="label" stylesheets="@css/style.css" text="找回密码"
+                                       textFill="#b2b2b2">
+                                    <font>
+                                        <Font size="13.0"/>
+                                    </font>
+                                </Label>
+                                <TextField fx:id="accountTextField" layoutX="109.0" layoutY="39.0" prefHeight="23.0"
+                                           prefWidth="206.0" promptText="QQ号码/手机/邮箱"
+                                           style="-fx-background-color: null; -fx-font-size: 17;" styleClass="textField"
+                                           stylesheets="@css/style.css">
+                                    <font>
+                                        <Font size="13.0"/>
+                                    </font>
+                                </TextField>
+                                <CheckBox layoutX="192.0" layoutY="121.0" mnemonicParsing="false"
+                                          style="-fx-background-color: white;" text="记住密码" textFill="#b2b2b2"/>
+                                <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="394.0" layoutY="169.0"
+                                           pickOnBounds="true" preserveRatio="true" styleClass="qrcode">
+                                    <image>
+                                        <Image url="@img/qrcode_raw.png"/>
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="list_btn" fitHeight="7.0" fitWidth="13.0" layoutX="320.0"
+                                           layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/down_list_raw.png"/>
+                                    </image>
+                                </ImageView>
+                                <ImageView fx:id="softKeyBoard" fitHeight="16.0" fitWidth="15.0" layoutX="318.0"
+                                           layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/softkeyboard_raw.png"/>
+                                    </image>
+                                </ImageView>
+                                <ScrollPane hbarPolicy="NEVER" layoutX="98.0" layoutY="71.0" prefHeight="182.0"
+                                            prefWidth="237.0" style="-fx-background-color: white;" visible="false">
+                                    <content>
+                                        <HBox prefHeight="50.0" prefWidth="236.0">
+                                            <children>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true"
+                                                           preserveRatio="true"/>
+                                                <VBox prefHeight="50.0" prefWidth="107.0"/>
+                                            </children>
+                                            <padding>
+                                                <Insets left="13.0"/>
+                                            </padding>
+                                        </HBox>
+                                    </content>
+                                    <padding>
+                                        <Insets top="7.0"/>
+                                    </padding>
+                                </ScrollPane>
+                            </children>
+                        </Pane>
+                    </children>
+                </VBox>
+                <ImageView opacity="0.52" pickOnBounds="true" visible="false">
+                    <image>
+                        <Image url="@./img/login-pane.png"/>
+                    </image>
+                </ImageView>
+                <ImageView id="avatars" fitHeight="67.0" fitWidth="67.0" layoutX="180.0" layoutY="87.0"
+                           pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/qq-avatar.png"/>
+                    </image>
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" color="WHITE"/>
+                    </effect>
+                </ImageView>
+                <ImageView id="state" fitHeight="15.0" fitWidth="15.0" layoutX="231.0" layoutY="138.0" opacity="0.7"
+                           pickOnBounds="true" preserveRatio="true">
+                    <image>
+
+                        <Image url="@img/state-online.png"/>
+                    </image>
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" color="WHITE" spread="0.73"/>
+                    </effect>
+
+
+                </ImageView>
+            </children>
+        </Pane>
+    </children>
+</StackPane>

@@ -1,0 +1,32 @@
+<component name="ArtifactManager">
+  <artifact name="QQLogin:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/QQLogin_jar</output-path>
+    <root id="root">
+      <element id="archive" name="QQLogin.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="QQLogin" />
+      </element>
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:win:18.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:18.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:win:18.0.1" />
+      <element id="library" level="project" name="Maven: org.kordamp.ikonli:ikonli-javafx:12.3.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:18.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-web:18.0.1" />
+      <element id="library" level="project" name="Maven: com.dlsc.formsfx:formsfx-core:11.5.0" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:18.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-media:win:18.0.1" />
+      <element id="library" level="project" name="Maven: org.kordamp.ikonli:ikonli-core:12.3.1" />
+      <element id="library" level="project" name="Maven: org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0" />
+      <element id="library" level="project" name="lib" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:win:18.0.1" />
+      <element id="library" level="project" name="Maven: org.controlsfx:controlsfx:11.1.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:win:18.0.1" />
+      <element id="library" level="project" name="Maven: net.synedra:validatorfx:0.3.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-web:win:18.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:18.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-media:18.0.1" />
+    </root>
+  </artifact>
+</component>
