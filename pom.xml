@@ -92,22 +92,37 @@
                     <target>18</target>
                 </configuration>
             </plugin>
+
             <plugin>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-maven-plugin</artifactId>
-                <version>0.0.8</version>
+                <groupId>io.github.fvarrui</groupId>
+                <artifactId>javapackager</artifactId>
+                <version>1.6.7</version>
                 <executions>
                     <execution>
-                        <!-- Default configuration for running with: mvn clean javafx:run -->
-                        <id>default-cli</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>package</goal>
+                        </goals>
                         <configuration>
-                            <mainClass>com.moontidef.qqlogin/com.moontidef.qqlogin.Main</mainClass>
-                            <launcher>app</launcher>
-                            <jlinkZipName>app</jlinkZipName>
-                            <jlinkImageName>app</jlinkImageName>
-                            <noManPages>true</noManPages>
-                            <stripDebug>true</stripDebug>
-                            <noHeaderFiles>true</noHeaderFiles>
+                            <!-- mandatory -->
+                            <mainClass>com.moontidef.qqlogin.Main</mainClass>
+                            <!-- optional -->
+                            <bundleJre>true</bundleJre>
+                            <generateInstaller>false</generateInstaller>
+<!--                            <bundleJre>true|false</bundleJre>-->
+<!--                            <generateInstaller>true|false</generateInstaller>-->
+<!--                            <administratorRequired>true|false</administratorRequired>-->
+                            <platform>auto</platform>
+<!--                            <platform>auto|linux|mac|windows</platform>-->
+<!--                            <additionalResources>-->
+<!--                                <additionalResource>file path</additionalResource>-->
+<!--                                <additionalResource>folder path</additionalResource>-->
+<!--                                <additionalResource>...</additionalResource>-->
+<!--                            </additionalResources>-->
+<!--                            <linuxConfig>...</linuxConfig>-->
+<!--                            <macConfig>...</macConfig>-->
+<!--                            <winConfig>...</winConfig>-->
+
                         </configuration>
                     </execution>
                 </executions>

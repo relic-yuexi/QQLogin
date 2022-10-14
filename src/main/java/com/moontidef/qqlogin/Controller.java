@@ -7,6 +7,7 @@ import javafx.animation.ScaleTransition;
 import javafx.animation.SequentialTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -36,6 +37,7 @@ public class Controller {
     public ImageView img_pg;
     public Line line1;
     public Pane bottomPane;
+    public Button loginBtn;
     @FXML
     Pane settingPane;
     @FXML
@@ -68,9 +70,7 @@ public class Controller {
             }
         });
 
-        bottomPane.onMouseClickedProperty().set(event -> {
-            bottomPane.requestFocus();
-        });
+        bottomPane.onMouseClickedProperty().set(event -> bottomPane.requestFocus());
 
 
         System.out.println("HelloController initialize");
@@ -148,5 +148,30 @@ public class Controller {
         System.out.println("minimizeWindow");
     }
 
+    public boolean loginBtnClicked()
+    {
+        String account = accountTextField.getText();
+        String password = passwordField.getText();
+        if (account.equals("ABC") && password.equals("123456"))
+        {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("登录成功");
+            alert.setHeaderText("登录成功");
+            alert.setContentText("欢迎使用本系统");
+            alert.showAndWait();
+
+            return true;
+        }
+        else
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("登录失败");
+            alert.setHeaderText("登录失败");
+            alert.setContentText("账号或密码错误");
+            alert.showAndWait();
+
+            return false;
+        }
+    }
 
 }

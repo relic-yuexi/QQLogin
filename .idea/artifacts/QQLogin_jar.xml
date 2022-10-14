@@ -19,7 +19,6 @@
       <element id="library" level="project" name="Maven: org.openjfx:javafx-media:win:18.0.1" />
       <element id="library" level="project" name="Maven: org.kordamp.ikonli:ikonli-core:12.3.1" />
       <element id="library" level="project" name="Maven: org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0" />
-      <element id="library" level="project" name="lib" />
       <element id="library" level="project" name="Maven: org.openjfx:javafx-base:win:18.0.1" />
       <element id="library" level="project" name="Maven: org.controlsfx:controlsfx:11.1.1" />
       <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:win:18.0.1" />

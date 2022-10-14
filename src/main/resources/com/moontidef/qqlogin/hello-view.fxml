@@ -80,9 +80,9 @@
                                        text="注册账号" textFill="#b2b2b2"/>
                                 <Line fx:id="line2" endX="134.0" layoutX="198.0" layoutY="109.0" startX="-100.0"
                                       stroke="#e5e5e5"/>
-                                <Button layoutX="98.0" layoutY="149.0" mnemonicParsing="false" prefHeight="34.0"
+                                <Button fx:id="loginBtn" layoutX="98.0" layoutY="149.0" mnemonicParsing="false" prefHeight="34.0"
                                         prefWidth="236.0" styleClass="btn_login" stylesheets="@css/style.css"
-                                        text="登录" textFill="#fcfcfc">
+                                        text="登录" textFill="#fcfcfc" onAction="#loginBtnClicked">
                                     <font>
                                         <Font size="14.0"/>
                                     </font>
